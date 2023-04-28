@@ -113,6 +113,14 @@ textarea:focus {
 
 .error input {
   border: 1px solid red;
+  visibility: visible;
+}
+.error i {
+  visibility: visible;
+}
+
+.error p {
+  visibility: visible;
 }
 
 #hero {

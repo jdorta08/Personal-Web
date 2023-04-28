@@ -1,26 +1,25 @@
-const form = document.getElementById("#contact-form");
-const nameInput = document.getElementById("#name");
-const emailInput = document.getElementById("#email");
-const messageInput = document.getElementById("#message");
+const form = document.getElementById("contact-form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const messageInput = document.querySelector("#message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
   validateForm();
 });
 
 function validateForm() {
-  if (!nameInput.value.trim()) {
+  if (nameInput.value.trim() === "") {
     setError(nameInput, "Please enter your name");
-  } else if (nameInput.value.trim().lenght() < 5) {
+  } else if (nameInput.value.trim().length < 5) {
     setError(nameInput, "Your full name must be at least 5 characters long");
   }
-  if (!emailInput.value.trim()) {
+  if (emailInput.value.trim() === "") {
     setError(emailInput, "Please enter your email");
   } else if (!validateEmail(emailInput.value)) {
     setError(emailInput, "Please enter a valid email address");
   }
-  if (!messageInput.value.trim()) {
+  if (messageInput.value.trim() === "") {
     setError(messageInput, "Please enter your message");
   }
 }

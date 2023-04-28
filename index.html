@@ -178,7 +178,7 @@
             <h2>Get in Touch</h2>
             <p>Need help for your next idea. Drop me a line below and let’s connect to see how I can help you develop it.</p>
             <p>Looking forward to working with you!</p>
-            <form id="contact-form" class="form-custom">
+            <form id="contact-form" class="form-custom" action="" method="GET">
               <div class="field-container">
                 <div class="form-field">
                   <label for="name">Name</label>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="form-field">
                   <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="Enter email" email="email" />
+                  <input type="email" id="email" placeholder="Enter email" name="email" />
                   <i class="bi bi-exclamation-circle-fill"></i>
                   <p>Error Messgae</p>
                 </div>
@@ -196,10 +196,10 @@
                   <label for="message">Drop me a line</label>
                   <div>
                     <textarea id="message" name="message" rows="5" cols="50"></textarea>
-                    <input type="submit" value="Submit" class="btn btn-primary" style="padding-top: 10px" />
                   </div>
                   <i class="bi bi-exclamation-circle-fill"></i>
                   <p>Error Messgae</p>
+                  <input type="submit" value="Submit" class="btn btn-primary" style="padding-top: 10px" />
                 </div>
               </div>
             </form>
