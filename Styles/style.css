@@ -121,14 +121,18 @@ header ul {
 
 .tracker {
   position: absolute;
-  width: 500px;
-  height: 500px;
   border-radius: 50%;
   overflow: hidden;
   background: #e9af77;
   background: radial-gradient(at center, #e9af77, #1f74e9);
   box-shadow: 0px 0px 10px radial-gradient(at center, #e9af77, #1f74e9, 0.8);
   opacity: 0.95;
+}
+
+.contact {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: var(--btn-color);
 }
 
 @media screen and (max-width: 700px) {

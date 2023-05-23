@@ -9,13 +9,3 @@ document.addEventListener("mousemove", (event) => {
 
   console.log(x, y);
 });
-
-document.addEventListener("scroll", (event) => {
-  let x = event.clientX;
-  let y = event.clientY;
-
-  tracker.style.left = x;
-  tracker.style.top = y;
-
-  console.log(x, y);
-});
