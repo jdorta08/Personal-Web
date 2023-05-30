@@ -3,7 +3,7 @@
   --font-size-h2: 2.8rem;
   --font-size-h3: 2rem;
   --font-size-h4: 1.8rem;
-  --font-size-p: 1.6rem;
+  --font-size-p: 1.5rem;
   --font-size-span: 1.2rem;
   --btn-padding: 1.5rem 6rem;
   --btn-color: #1264ff;
@@ -29,7 +29,7 @@ p,
 span {
   font-family: "Poppins", sans-serif;
   color: var(--font-color-dark);
-  line-height: 1.2em;
+  line-height: 1.4em;
 }
 
 h1 {
@@ -113,20 +113,15 @@ header ul {
   padding: 12px 36px;
 }
 
-.card {
-  gap: 10px;
-  border: none;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.card-body .btn {
+  font-size: 1.4rem;
+  padding: 7px 30px;
 }
 
-.tracker {
-  position: absolute;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #e9af77;
-  background: radial-gradient(at center, #e9af77, #1f74e9);
-  box-shadow: 0px 0px 10px radial-gradient(at center, #e9af77, #1f74e9, 0.8);
-  opacity: 0.95;
+.card {
+  gap: 20px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 4px 6px 8px 4px;
 }
 
 .contact {
@@ -135,17 +130,15 @@ header ul {
   background-color: var(--btn-color);
 }
 
+.card-img-top {
+  height: 148px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 700px) {
-  .container {
-    width: 90%;
-    padding: 15% 0;
-  }
   .projects-row {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .card {
-    width: 90% !important;
   }
   h1 {
     font-size: 3.2rem;
